@@ -1,0 +1,83 @@
+{% load static %}
+
+<!--
+<link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css">
+<h2>hi</h2>
+<img src="{% static '/images/kitty.jpg' %}">
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <title>My Website</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row"> <!-- first row -->
+            <div class="col-md-3"> <!--first col-->
+                <div class="card card-body h-100" profile-wrapper">
+                    <!-- content-->
+                    <img id="profile-pic" src="{% static '/images/kitty.jpg' %}">
+                    <hr>
+                    <h4>Hi I'm Alyssa!</h4>
+                    <p>this is my first successful Django Project!</p>
+                </div>
+            </div>
+            <div class="col-md-9"> <!--second col-->
+                <div class="card card-body h-100">
+                    <!-- content-->
+                    <h4>My Website!</h4>
+                    <hr>
+                    <p>Hello it took me forever to get the css linked properly but its done! I hope</p>
+                    <br>
+                    <p>I have to thank Dennis Ivy on youtube for all his videos on Django 10/10 would recommend.</p>
+                    <p>Also special thanks to ppl on stackoverflow, where would I be without them.</p>
+                    <p>Particularly <a href="https://stackoverflow.com/questions/46875481/cant-find-static-files-in-django">this</a> link.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row"> <!-- second row -->
+            <div class="col-md-6"> <!--first col-->
+                <div class="card card-body h-100"">
+                    <!-- content-->
+                    <h4>What comes next</h4>
+                    <ul>
+                        <li>Brush up on html and css</li>
+                        <li>Learn to connect database</li>
+                        <li>Learn to create and use admin functions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6"> <!--second col-->
+                <div class="card card-body h-100"">
+                    <!-- content-->
+                    <h4>Jiayou!</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row"> <!-- third row -->
+            <div class="col-md-6"> <!--first col-->
+                <div class="card card-body h-100"">
+                    <!-- content-->
+                </div>
+            </div>
+            <div class="col-md-6"> <!--second col-->
+                <div class="card card-body h-100"">
+                    <!-- content-->
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
